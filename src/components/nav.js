@@ -19,7 +19,7 @@ const Nav = () => {
     <div className="nav_header">
       <nav className="header">
         <Link className="brand" to="/">
-          <i class="bx bx-color"></i>Gallery
+          <i className="bx bx-color"></i>Gallery
         </Link>
         <ul className={active}>
           <li className="nav_item">
