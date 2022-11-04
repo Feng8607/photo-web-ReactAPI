@@ -39,8 +39,8 @@ const Homepage = () => {
         Authorization: auth,
       },
     });
-    let parsedDate = await dataFetch.json();
-    setData(data.concat(parsedDate.photos));
+    let parsedData = await dataFetch.json();
+    setData(data.concat(parsedData.photos));
   };
 
   useEffect(() => {
@@ -65,8 +65,8 @@ const Homepage = () => {
       />
       <div className="pictures">
         {data &&
-          data.map((d) => {
-            return <Picture key={d.id} data={d} />;
+          data.map((Item) => {
+            return <Picture key={Item.id} data={Item} />;
           })}
       </div>
       <div className="morePicture">

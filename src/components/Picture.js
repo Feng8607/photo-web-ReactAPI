@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const picture = ({ data }) => {
   return (
@@ -12,9 +11,9 @@ const picture = ({ data }) => {
         </div>
         <p>
           Download Image:
-          <Link target="_blank" to={data.src.large}>
+          <a target="_blank" href={data.src.large}>
             <span className="down">Click Here</span>
-          </Link>
+          </a>
         </p>
       </div>
     </div>
