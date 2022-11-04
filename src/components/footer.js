@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const footer = () => {
   return (
@@ -9,13 +10,13 @@ const footer = () => {
           <nav>
             <ul>
               <li>
-                <a href="">網站資訊</a>
+                <Link to="/">網站資訊</Link>
               </li>
               <li>
-                <a href=""> 服務宗旨</a>
+                <Link to="/"> 服務宗旨</Link>
               </li>
               <li>
-                <a href="">關於作者</a>
+                <Link to="/">關於作者</Link>
               </li>
             </ul>
           </nav>
@@ -25,13 +26,13 @@ const footer = () => {
           <nav>
             <ul>
               <li>
-                <a href="">圖庫資訊</a>
+                <Link to="/">圖庫資訊</Link>
               </li>
               <li>
-                <a href=""> 精選圖片</a>
+                <Link to="/"> 精選圖片</Link>
               </li>
               <li>
-                <a href="">圖片收藏</a>
+                <Link to="/">圖片收藏</Link>
               </li>
             </ul>
           </nav>

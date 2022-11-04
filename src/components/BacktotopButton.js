@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 const BacktotopButton = () => {
-  const [Backtotopbutton, SetbacktotopButton] = useState(false);
+  const [, SetbacktotopButton] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
