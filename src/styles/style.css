@@ -39,7 +39,7 @@ ul {
   flex: 1 1 300px;
   color: rgb(236, 138, 102);
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: 600;
 }
@@ -50,7 +50,7 @@ ul {
   align-items: center;
 }
 .nav_header .header .nav_menu li {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
 }
 .nav_header .header .nav_menu li .nav_link {
   font-size: 1.5rem;
@@ -61,7 +61,7 @@ ul {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 1.5px;
   left: 0;
   bottom: 0;
   background: aliceblue;
@@ -78,7 +78,7 @@ ul {
 .nav_header .header .nav_toggler div {
   margin: 0.8rem 1rem 0.5rem 1rem;
   width: 3rem;
-  height: 0.4rem;
+  height: 3px;
   background-color: rgb(255, 255, 255);
   transition: 0.4s ease-in;
 }
@@ -91,9 +91,12 @@ ul {
 }
 .search input,
 .search button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.25rem;
   border: 3px solid rgb(43, 0, 43);
+}
+.search input {
+  border-right: 0;
 }
 .search button {
   background-color: black;
@@ -136,7 +139,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
+  padding: 3rem;
+  font-size: 1.5rem;
 }
 .morePicture button {
   padding: 1rem;
@@ -189,9 +193,6 @@ ul {
   cursor: pointer;
   opacity: 80%;
 }
-.scrollup .top:hover {
-  opacity: 100%;
-}
 
 @media screen and (max-width: 550px) {
   .search input {
@@ -210,13 +211,13 @@ ul {
     display: block;
   }
   .nav_header .header .brand {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .nav_header .header .nav_menu {
     position: fixed;
-    top: 4rem;
+    top: 3.4rem;
     left: 100%;
-    width: 60%;
+    width: 50%;
     height: 100%;
     transform: translateX(100%);
     background-color: rgb(14, 38, 110);
@@ -231,13 +232,13 @@ ul {
     left: 0;
   }
   .nav_header .header .toggle .line1 {
-    transform: rotate(-45deg) translate(-10px, 15px);
+    transform: rotate(-45deg) translate(-12px, 12px);
   }
   .nav_header .header .toggle .line2 {
     opacity: 0;
   }
   .nav_header .header .toggle .line3 {
-    transform: rotate(45deg) translate(-10px, -15px);
+    transform: rotate(45deg) translate(-10px, -10px);
   }
 }
 .pictures {
@@ -255,11 +256,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 1rem;
 }
 .pictures .picture .imageContainer {
   overflow: hidden;
   height: 40vh;
   width: 100%;
+  border-radius: 1rem;
 }
 .pictures .picture .imageContainer img {
   width: 100%;
@@ -267,6 +270,7 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s ease-in;
+  border-radius: 1rem;
 }
 .pictures .picture .imageContainer img:hover {
   transform: scale(1.25);

@@ -1,53 +1,56 @@
-.pictures{
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .picture {
+    padding: 1rem;
+    width: 400px;
+    background-color: antiquewhite;
+    margin: 0.5rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .picture{
-        padding: 1rem;
-        width: 400px;
-        background-color: antiquewhite;
-        margin: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .imageContainer{
-            overflow: hidden;
-            height: 40vh;
-            width: 100%;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: all 0.3s ease-in;
-                &:hover{
-                    transform: scale(1.25);
-                }
-            }
+    border-radius: 1rem;
+    .imageContainer {
+      overflow: hidden;
+      height: 40vh;
+      width: 100%;
+      border-radius: 1rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease-in;
+        border-radius: 1rem;
+        &:hover {
+          transform: scale(1.25);
         }
-        p{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            a{
-                width: 100%;
-                margin: 1rem 0;
-               .down{
-                   padding: 0.5rem;
-                   border-radius: 3rem;
-                   background-color: rgb(202, 110, 34);
-                   color: rgb(20, 20, 20);
-               }
-            }
-        }
+      }
     }
+    p {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      a {
+        width: 100%;
+        margin: 1rem 0;
+        .down {
+          padding: 0.5rem;
+          border-radius: 3rem;
+          background-color: rgb(202, 110, 34);
+          color: rgb(20, 20, 20);
+        }
+      }
+    }
+  }
 }
-@media screen and(max-width: 500px){
-    .pictures{
-        .picture{
-            width: 80vw;
-        }
+@media screen and(max-width: 500px) {
+  .pictures {
+    .picture {
+      width: 80vw;
     }
+  }
 }
