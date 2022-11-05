@@ -132,7 +132,7 @@ ul {
     text-align: center;
     background-color: rgb(7, 18, 49);
     color: antiquewhite;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .morePicture {
@@ -207,6 +207,28 @@ ul {
     button {
       font-size: 1.5rem;
     }
+  }
+  .footer {
+    .footercon {
+      .footitem {
+        margin: 0.5rem 2.5rem;
+        h2 {
+          font-size: 1.5rem;
+        }
+        nav {
+          ul {
+            li {
+              a {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .forus {
+    text-align: center;
   }
 }
 @media screen and(max-width:840px) {
