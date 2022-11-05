@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/photo-web-reactapi/static/css/main.19facc3e.css",
+    "main.css": "/photo-web-reactapi/static/css/main.6123ac92.css",
     "main.js": "/photo-web-reactapi/static/js/main.cc4327f0.js",
     "index.html": "/photo-web-reactapi/index.html",
-    "main.19facc3e.css.map": "/photo-web-reactapi/static/css/main.19facc3e.css.map",
+    "main.6123ac92.css.map": "/photo-web-reactapi/static/css/main.6123ac92.css.map",
     "main.cc4327f0.js.map": "/photo-web-reactapi/static/js/main.cc4327f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.19facc3e.css",
+    "static/css/main.6123ac92.css",
     "static/js/main.cc4327f0.js"
   ]
 }
