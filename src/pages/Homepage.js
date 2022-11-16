@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
 import Picture from "../components/Picture";
+import axios from "axios";
 const Homepage = () => {
   const [input, setInput] = useState("");
   let [data, setData] = useState(null);
@@ -12,34 +13,32 @@ const Homepage = () => {
 
   const search = async (url) => {
     setPage(2);
-    const dataFetch = await fetch(url, {
-      method: "GET",
+    const dataFetch = await axios.get(url, {
       headers: {
-        Accept: "application/json",
         Authorization: auth,
       },
     });
-    let parsedDate = await dataFetch.json();
-    setData(parsedDate.photos);
+    setData(dataFetch.data.photos);
+    setCurrentSearch(input);
   };
 
   //Load more picture
   const morepicture = async () => {
     let newURL;
     if (currentSearch === "") {
-      newURL = `https://api.pexels.com/v1/curated?page=${page}&per_page=15`;
+      newURL = `https://api.pexels.com/v1/curated?page=${page + 1}&per_page=15`;
     } else {
-      newURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=15&page=${page}`;
+      newURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=15&page=${
+        page + 1
+      }`;
     }
     setPage(page + 1);
-    const dataFetch = await fetch(newURL, {
-      method: "GET",
+    const dataFetch = await axios.get(newURL, {
       headers: {
-        Accept: "application/json",
         Authorization: auth,
       },
     });
-    let parsedData = await dataFetch.json();
+    let parsedData = dataFetch.data;
     setData(data.concat(parsedData.photos));
   };
 
